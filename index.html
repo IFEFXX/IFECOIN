@@ -35,25 +35,29 @@
       transform: rotate(360deg);
     }
     #val{
-      font-size: 28px;
+      font-size: 32px;
       colour: aliceblue;
     }
+     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   </style>
 </head>
 <body>
   <div>
 
-    <h1 id="val">000.00</h1>
-  
+    <h1 id="val">00000</h1>
+  <br> <br> <br>
   </div>
   <div class="container">
     <img src="https://i.ibb.co/pW1XZMg/images-10-removebg-preview.png" alt="Coin" id="coin">
   </div>
   <script>
     const coin = document.getElementById('coin');
-
+let val = document.getElementById('val');
+let tap = 0
     coin.addEventListener('click', () => {
       coin.classList.toggle('rotate');
+      tap +=1
+      val.innerHTML = tap
     });
   </script>
 </body>
