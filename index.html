@@ -43,21 +43,21 @@
 </head>
 <body>
   <div>
-
-    <h1 id="val">00000</h1>
-  <br> <br> <br>
+    <h1 id="val">0</h1>
+    <br> <br> <br>
   </div>
   <div class="container">
     <img src="https://i.ibb.co/pW1XZMg/images-10-removebg-preview.png" alt="Coin" id="coin">
   </div>
   <script>
     const coin = document.getElementById('coin');
-let val = document.getElementById('val');
-let tap = 0
+    let val = document.getElementById('val');
+    let tap = 0;
+
     coin.addEventListener('click', () => {
       coin.classList.toggle('rotate');
-      tap +=1
-      val.innerHTML = tap
+      tap += 1;
+      val.innerHTML = tap;
     });
   </script>
 </body>
